@@ -1,21 +1,13 @@
 {
-  "name": "shirakamisrs-public",
+  "name": "shirakamisrs-repository-tools",
   "version": "1.0.0",
-  "description": "shirakamisrs-repository",
+  "description": "Shirakami SRS Repository Tools",
   "main": "scripts/build.js",
   "scripts": {
     "build": "ts-node --project scripts/tsconfig.json -- scripts/build.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BeMacized/ShiraKamiSRS-Public.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BeMacized/ShiraKamiSRS-Public/issues"
-  },
-  "homepage": "https://github.com/BeMacized/ShiraKamiSRS-Public#readme",
+  "author": "BeMacized",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.37",
     "ts-node": "^9.1.1",
