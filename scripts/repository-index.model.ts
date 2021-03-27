@@ -5,6 +5,7 @@ export interface RepositoryIndex {
 }
 
 export interface RepositoryIndexSet {
+    exportVersion: string;
     name: string;
     description: string;
     modes: ReviewMode[];

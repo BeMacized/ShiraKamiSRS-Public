@@ -36,6 +36,7 @@ const sets: RepositoryIndexSet[] = fs.readdirSync(
     setData => setData !== null
 ).map((setData: any) => ({
     fileName: 'sets/' + setData.fileName,
+    exportVersion: setData.set.exportVersion,
     name: setData.set.name,
     cardCount: setData.set.cards.length,
     modes: setData.set.modes,
