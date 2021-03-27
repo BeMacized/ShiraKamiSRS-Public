@@ -1,4 +1,4 @@
-# ShiraKamiSRS Public Repository
+# ShiraKamiSRS Public Set Repository
 
 This is the default set repository that is included for every ShiraKamiSRS user. 
 It contains a few basic sets for people to get started without having to create their own sets.
