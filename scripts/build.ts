@@ -5,10 +5,11 @@ import {RepositoryIndex, RepositoryIndexSet} from "./repository-index.model";
 // Ensure the index file exists
 const indexFilePath = path.join(__dirname, '../repository/index.json');
 if (!fs.existsSync(indexFilePath)) {
-    const defaultIndex = {
+    const defaultIndex: RepositoryIndex = {
         version: "v1",
-        repositoryName: 'My Repository',
+        name: 'My Repository',
         imageUrl: "",
+        homePageUrl: "",
         sets: [],
     };
     fs.writeFileSync(indexFilePath, JSON.stringify(defaultIndex));

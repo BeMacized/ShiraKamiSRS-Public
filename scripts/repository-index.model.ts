@@ -2,6 +2,7 @@ export interface RepositoryIndex {
     version: "v1";
     name: string;
     imageUrl?: string;
+    homePageUrl?: string;
     sets: RepositoryIndexSet[];
 }
 
