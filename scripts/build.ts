@@ -41,12 +41,12 @@ const sets: RepositoryIndexSet[] = fs.readdirSync(
 }).filter(
     setData => setData !== null
 ).map((setData: any) => ({
-    fileName: 'sets/' + setData.fileName,
+    file: 'sets/' + setData.fileName,
     exportVersion: setData.set.exportVersion,
     name: setData.set.name,
     cardCount: setData.set.cards.length,
     modes: setData.set.modes,
-    description: currentIndex.sets?.find(oldSet => oldSet.fileName === 'sets/' + setData.fileName)?.description ?? ""
+    description: currentIndex.sets?.find(oldSet => oldSet.file === 'sets/' + setData.fileName)?.description ?? ""
 }));
 
 // Write sets to index

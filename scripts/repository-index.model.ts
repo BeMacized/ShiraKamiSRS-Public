@@ -12,7 +12,7 @@ export interface RepositoryIndexSet {
     description: string;
     modes: ReviewMode[];
     cardCount: number;
-    fileName: string;
+    file: string;
 }
 
 export type ReviewMode = 'enToJp' | 'jpToEn' | 'kanjiToKana';
