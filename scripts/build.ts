@@ -6,6 +6,7 @@ import {RepositoryIndex, RepositoryIndexSet} from "./repository-index.model";
 const indexFilePath = path.join(__dirname, '../repository/index.json');
 if (!fs.existsSync(indexFilePath)) {
     const defaultIndex = {
+        version: "v1",
         repositoryName: 'My Repository',
         imageUrl: "",
         sets: [],
@@ -15,6 +16,10 @@ if (!fs.existsSync(indexFilePath)) {
 
 // Load the current index file
 const currentIndex: RepositoryIndex = JSON.parse(fs.readFileSync(indexFilePath).toString());
+if (currentIndex.version !== 'v1') {
+    console.error(`Build script does not support the current index version: ${currentIndex.version}`);
+    process.exit(1);
+}
 
 // Construct sets
 const sets: RepositoryIndexSet[] = fs.readdirSync(
