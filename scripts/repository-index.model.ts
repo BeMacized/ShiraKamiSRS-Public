@@ -1,6 +1,6 @@
 export interface RepositoryIndex {
     version: "v1";
-    id: string;
+    publicId: string;
     name: string;
     imageUrl?: string;
     homePageUrl?: string;

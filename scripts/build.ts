@@ -9,7 +9,7 @@ const indexFilePath = path.join(__dirname, '../repository/index.json');
 if (!fs.existsSync(indexFilePath)) {
     const defaultIndex: RepositoryIndex = {
         version: "v1",
-        id: uuidv4(),
+        publicId: uuidv4(),
         name: 'My Repository',
         imageUrl: "",
         homePageUrl: "",
