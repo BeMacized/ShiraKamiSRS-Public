@@ -1,7 +1,9 @@
 {
   "version": "v1",
   "publicId": "dcf1b045-55e5-4471-affc-4815f2249a7c",
-  "homePageUrl": 1,
+  "name": "ShiraKamiSRS Public",
+  "imageUrl": "https://i.imgur.com/BH0cMKn.jpg",
+  "homePageUrl": "https://github.com/BeMacized/ShiraKamiSRS-Public",
   "sets": [
     {
       "file": "sets/genki_1_3rd_edition_lesson_1.json",
