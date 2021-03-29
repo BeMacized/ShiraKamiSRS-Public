@@ -3,6 +3,15 @@
 This is the default set repository that is included for every ShiraKamiSRS user. 
 It contains a few basic sets for people to get started without having to create their own sets.
 
+## Repository URL
+
+You do not have to add this repository yourself, as it is already included for every ShiraKamiSRS user.
+Nonetheless, the URL for this repository is:
+
+```
+https://bemacized.github.io/ShiraKamiSRS-Public/repository/
+```
+
 ## Currently included sets
 
 * Genki I (3rd Edition)
